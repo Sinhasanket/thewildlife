@@ -14,8 +14,9 @@ var express               = require("express"),
     User                  = require("./model/user");
    // middleware             = require("./middleware/index.js");
 
-// mongoose.connect("mongodb://localhost/wildlife");
-mongoose.connect("mongodb://sanket:sanketsinha1@ds147461.mlab.com:47461/thewildlife");
+mongoose.connect(process.env.DATABASEURL);
+//mongoose.connect("mongodb://sanket:sanketsinha1@ds147461.mlab.com:47461/thewildlife");
+
 
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + "/public"));
