@@ -1,3 +1,69 @@
-<h1>about page!!</h1>
+<%include ./partials/header%>
 
-<a href="/">Go to home page</a>
+<section>
+   <center><h1>About</h1></center> 
+    <hr class="line">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://www.nhm.ac.uk/resources/visit/wpy/2017/large/12.jpg" alt="wildlife">
+      <div class="carousel-caption">
+        <h3>If we can teach people about wildlife, they will be touched. Share my wildlife with me. Because humans want to save things that they love.</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://s3.amazonaws.com/static-asset/op-video-sync/images/production/p-5733937400001-brightcove-a-guide-to-watching-wildlife-in-the-pantanal-20180223-061714.jpg" alt="Animals">
+      <div class="carousel-caption">
+        <h3>The smaller the creature, the bolder its spirit.</h3>
+      </div>
+    </div>
+     <div class="item">
+      <img src="http://webneel.com/daily/sites/default/files/images/daily/09-2013/19-wildlife-photography.jpg" alt="forest">
+      <div class="carousel-caption">
+        <h3>A forest's beauty lies with its inhabitants</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<div class="col-md-6">
+    <p>Many Indian species are descendants of taxa originating in Gondwana, of which India originally was a part. Peninsular India's subsequent movement towards,
+     and collision with, the Laurasian landmass set off a mass exchange of species. However,
+     volcanism and climatic change 20 million years ago caused the extinction of many endemic Indian forms. Soon thereafter, mammals entered India 
+     from Asia through two zoogeographical passes on either side of the emerging Himalaya</p>
+    <p>In recent decades, human encroachment has posed a threat to India's wildlife; in response,
+     the system of national parks and protected areas, first established in 1935, was substantially expanded.
+     In 1972, India enacted the Wildlife Protection Act and Project Tiger to safeguard crucial habitat; 
+    further federal protections were promulgated in the 1980s. Along with over 515 wildlife sanctuaries,
+    India now hosts 18 biosphere reserves, 10 of which are part of the World Network of Biosphere Reserves; 
+    26 wetlands are registered under the Ramsar Convention.</p>
+    <p>The Indian government has established eighteen biosphere reserves of India which protect larger areas of natural habitat and often include one or more national parks and/or preserves,
+    along buffer zones that are open to some economic uses. Protection is granted not only to the flora and fauna of the protected region, 
+    but also to the human communities who inhabit these regions, and their ways of life.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%include ./partials/footer%>

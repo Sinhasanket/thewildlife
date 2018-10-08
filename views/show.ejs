@@ -1,0 +1,27 @@
+<% include ./partials/header %>
+<div class="container">
+    <center><h1><%= wild.title %></h1></center>
+    <div class="row">
+        <div class="col-md-3">
+             <div class="list-group">
+                <li class="list-group-item active">Info 1</li>
+                <li class="list-group-item">Info 2</li>
+                <li class="list-group-item">Info 3</li>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="thumbnail card">
+                <img class="img responsive" src="<%= wild.image %>">
+                <div class="caption-full">
+                    <span><%= wild.created.toDateString() %></span>
+                    <hr class="line">
+                    <p><%= wild.description %></p>
+                     <a class="btn btn-success" href="/wilds/<%= wild._id %>/edit"> Edit</a>
+                     <form id="delete" action="/wilds/<%= wild._id %>?_method=DELETE" method="POST">
+                    <button class="btn btn-danger"> Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include ./partials/footer %>
