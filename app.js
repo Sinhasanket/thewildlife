@@ -15,7 +15,7 @@ var express               = require("express"),
    // middleware             = require("./middleware/index.js");
 
 // mongoose.connect("mongodb://localhost/wildlife");
-mongoose.connect("mongodb://<sanketsinha99>:<sanketwildlife1234>@ds147461.mlab.com:47461/thewildlife", function(err, connected){
+mongoose.connect("mongodb://<sanket>:<sanketwildlife1234>@ds147461.mlab.com:47461/thewildlife", function(err, connected){
     if(err){
         console.log(err);
     }
