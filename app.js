@@ -15,19 +15,7 @@ var express               = require("express"),
    // middleware             = require("./middleware/index.js");
 
 // mongoose.connect("mongodb://localhost/wildlife");
-mongoose.connect("mongodb://<sanket>:<sanketwildlife1234>@ds147461.mlab.com:47461/thewildlife", function(err, connected){
-    if(err){
-        console.log(err);
-    }
-});
-// mongoose.connect('mongodb://<sanketsinha99>.mlab.com:47461/<thewildlife>?ssl=true', {
-//     auth: {
-//       user: '<sanketsinha99>',
-//       password: '<sanketwildlife1234>'
-//     }
-//   })
-//   .then(() => console.log('connection successful'))
-//   .catch((err) => console.error(err));
+mongoose.connect("mongodb://sanket:sanketsinha1@ds147461.mlab.com:47461/thewildlife");
 
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + "/public"));
